@@ -9,12 +9,12 @@ spec:
     version: 2.6.2
   template:
     metadata:
-      name: myjavaapp
       labels:
         app: myjavaapp
+        version: 2.6.2
     spec:
       containers:
         - name: myjavaapp-container
-          image: maha4iac/myjavaaaplicatio:2
+          image: maha4iac/myjavaaaplication:2
           ports:
             - containerPort: 8080
