@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: myaccountapp
+spec:
+  replicas: 5
+  selector:
+    app: myaccountapp
+  template:
+    metadata:
+      name: myaccountapp
+      labels:
+        app: myaccountapp
+    spec:
+      containers:
+        - name: myccountapp
+          image: anjani4687/accounts
+          ports:
+            - containerPort: 8088

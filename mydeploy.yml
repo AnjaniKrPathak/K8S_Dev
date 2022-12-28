@@ -5,11 +5,11 @@ metadata:
   labels: 
     app: myjavaapp
   spec:
-      replicas: 3
+    replicas: 3
       selector:
         matchLabels:
           app: myjavaapp
-      template:
+    template:
         metadata:
           labels:
             app: myjavaapp

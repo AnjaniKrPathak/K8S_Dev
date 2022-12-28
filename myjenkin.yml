@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myjenkinapp
+  labels:
+    name: myjenkinapp
+spec:
+  containers:
+  - name: jenkin-container
+    image: jenkins/jenkins:lts
+    ports:
+      - containerPort: 8080
